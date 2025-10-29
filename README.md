@@ -6,9 +6,9 @@ Goal: Gain deep fluency in TS types, React hooks, and scalable state management.
 
 ✨ Features:
 
-Workspace & task board creation (CRUD)
-Drag-and-drop task movement
-User role-based filtering (admin, member)
-Dark/light mode toggle
-Persisted Zustand state (localStorage or mock API)
-Custom hooks for data & theme management
+- Workspace & task board creation (CRUD)
+- Drag-and-drop task movement
+- User role-based filtering (admin, member)
+- Dark/light mode toggle
+- Persisted Zustand state (localStorage or mock API)
+- Custom hooks for data & theme management
