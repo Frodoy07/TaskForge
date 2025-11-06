@@ -9,12 +9,7 @@ import {
   AccordionContent,
 } from "@/components/ui/accordion";
 
-type cardProps = {
-  children: React.ReactNode;
-  title?: string;
-};
-
-const Dashboard = ({ children }: cardProps) => {
+const Dashboard = () => {
   return (
     <>
       <NavBar />
@@ -75,7 +70,7 @@ const Dashboard = ({ children }: cardProps) => {
         </aside>
 
         <main className="bg-white p-6 h- h-[calc(100vh-0px)] overflow-y-auto">
-          {children}
+          <h2>Children components here...</h2>
         </main>
       </section>
     </>
