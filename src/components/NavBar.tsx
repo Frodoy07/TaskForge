@@ -2,18 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
 import {
-  Sidebar,
-  SidebarProvider,
-  SidebarTrigger,
-  SidebarContent,
-  SidebarGroup,
-  SidebarGroupLabel,
-  SidebarGroupContent,
-  SidebarMenu,
-  SidebarMenuItem,
-  SidebarMenuButton,
-} from "@/components/ui/sidebar";
-import {
   Search,
   Megaphone,
   CircleHelp,
@@ -21,8 +9,6 @@ import {
   Ellipsis,
   Bolt,
   LogOut,
-  Settings,
-  Home,
 } from "lucide-react";
 import {
   DropdownMenu,
@@ -31,7 +17,7 @@ import {
   DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuSeparator,
-} from "@radix-ui/react-dropdown-menu";
+} from "@/components/ui/dropdown-menu";
 import {
   Popover,
   PopoverTrigger,
@@ -49,7 +35,7 @@ const NavBar = () => {
       <NavigationMenuList className="justify-between gap-3 w-full px-3">
         <NavigationMenuItem>
           <img
-            src="/public/taskforge.webp"
+            src="taskforge.webp"
             alt="taskforge image"
             className="h-12 w-auto md:mr-20"
           />
