@@ -2,6 +2,7 @@ import NavBar from "@/components/NavBar";
 import { Link } from "react-router";
 import { FolderKanban, SquareActivity } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ModeToggle } from "@/components/mode-toggle";
 import {
   Accordion,
   AccordionItem,
@@ -13,8 +14,9 @@ const Dashboard = () => {
   return (
     <>
       <NavBar />
-      <section className="grid grid-cols-[25%_75%] mnin-h-screen">
-        <aside className="bg-[-sidebar] p-4 overflow-hidden">
+      <section className="grid grid-cols-[25%_75%] h-[calc(100vh-4rem)] overflow-hidden">
+        {/* Sidebar */}
+        <aside className="bg-[var(--sidebar)] p-4 overflow-y-hidden">
           <Button
             asChild
             variant="ghost"
@@ -26,6 +28,7 @@ const Dashboard = () => {
               Board
             </Link>
           </Button>
+
           <Button
             asChild
             variant="ghost"
@@ -41,9 +44,10 @@ const Dashboard = () => {
           <div className="h-[1px] bg-muted my-2" />
 
           <h3 className="text-sm px-4 mt-4 text-gray-500">Workspaces</h3>
+
           <Accordion type="single" collapsible>
             <AccordionItem value="account">
-              <AccordionTrigger className="flex items-center rounded-md px-4 py-2 justify-start hover:bg-accent hover:text-accent-foreground transition-color">
+              <AccordionTrigger className="flex items-center rounded-md px-4 py-2 justify-start hover:bg-accent hover:text-accent-foreground transition-colors">
                 <div className="size-8 rounded-md text-center bg-[var(--accent)] overflow-hidden">
                   <p className="text-lg font-bold">M</p>
                 </div>
@@ -69,8 +73,13 @@ const Dashboard = () => {
           </Accordion>
         </aside>
 
-        <main className="bg-white p-6 h- h-[calc(100vh-0px)] overflow-y-auto">
+        {/* Main content */}
+        <main className="relative p-6 overflow-y-auto">
           <h2>Children components here...</h2>
+
+          <div className="absolute bottom-4 right-4">
+            <ModeToggle />
+          </div>
         </main>
       </section>
     </>

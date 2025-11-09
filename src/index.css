@@ -1,6 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap");
 
 @custom-variant dark (&:is(.dark *));
 
@@ -96,6 +96,7 @@
   --sidebar-accent-foreground: oklch(0.25 0.02 255);
   --sidebar-border: oklch(0.92 0.005 260);
   --sidebar-ring: oklch(0.55 0.04 255);
+  --profile-bg: oklch(0.45 0.06 255);
 }
 
 /* 🌙 Dark Mode */
@@ -144,6 +145,7 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(0.3 0.02 255);
   --sidebar-ring: oklch(0.55 0.04 255);
+  --profile-bg: oklch(52.151% 0.15151 255.98);
 }
 
 @layer base {

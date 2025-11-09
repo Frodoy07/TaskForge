@@ -43,7 +43,7 @@ const NavBar = () => {
         <NavigationMenuItem className="flex gap-1 md:flex-2 ">
           <Popover>
             <PopoverTrigger className=" relative items-center w-full">
-              <span className="absolute -left-8 top-2 md:left-2 md:top-1.5">
+              <span className="absolute -left-8 top-1 md:left-2 md:top-1.5">
                 <Search
                   size={20}
                   className="text-gray-400 dark:text-gray-500"
@@ -92,12 +92,12 @@ const NavBar = () => {
             </DropdownMenuTrigger>
 
             <DropdownMenuContent
-              className="w-72 rounded-md shadow-sm py-3 px-3 bg-[--background] mt-7"
+              className="w-72 rounded-md shadow-sm py-3 px-3 mt-7"
               align="start"
             >
               <DropdownMenuGroup>
                 <DropdownMenuItem className="my-2 flex gap-2">
-                  <Avatar className="w-6 h-6">
+                  <Avatar className="w-6 h-6 bg-[var(--profile-bg)]">
                     <AvatarFallback>FF</AvatarFallback>
                   </Avatar>
                   <span>Account</span>
@@ -132,7 +132,7 @@ const NavBar = () => {
             <div className="p-2 hover:bg-gray-200 rounded-sm transition-colors">
               <Bell size={18} />
             </div>
-            <Avatar className="w-7 h-7 mt-1 bg-[-primary] text-black">
+            <Avatar className="w-7 h-7 mt-1 bg-[var(--profile-bg)] text-black">
               <AvatarFallback>FF</AvatarFallback>
             </Avatar>
           </div>
